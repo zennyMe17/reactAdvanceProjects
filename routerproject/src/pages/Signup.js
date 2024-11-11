@@ -2,8 +2,7 @@ import React from 'react'
 import Template from '../components/Template';
 function Signup({setLoggedIn}) {
 
-    console.log("Im in signup.js")
-    setLoggedIn(true)
+    
 
     return ( <div>
 
@@ -13,7 +12,7 @@ function Signup({setLoggedIn}) {
             desc2="Education to future-proof your career"
             image="login"
             formtype="signup"
-            setIsLoggedIn={setLoggedIn}
+            setLoggedIn={setLoggedIn}
         />
 
     </div> );

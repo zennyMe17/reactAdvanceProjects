@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SignupForm from './SignupForm';
 import LoginForm from './LoginForm';
 function Template({title, desc1, desc2, image, formtype, setLoggedIn}) {
@@ -15,7 +15,7 @@ function Template({title, desc1, desc2, image, formtype, setLoggedIn}) {
             </p>
 
             {formtype === "signup"?
-            (<SignupForm/>):
+            (<SignupForm setLoggedIn={setLoggedIn}/>):
             (<LoginForm setLoggedIn={setLoggedIn}/>)}
 
             <div>
